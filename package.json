@@ -1,0 +1,19 @@
+{
+  "name": "shri2025-task",
+  "version": "1.0.0",
+  "description": "Оптимизировать страницу, выложить результат на Github-Pages и отправить его на проверку на [https://shri-performance.ru/](https://shri-performance.ru/), отправив адрес вашей страницы. Нужно набрать минимум **80 баллов**. Набрать больше баллов возможно, но больше 120 в зачёт не пойдёт.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  }
+}

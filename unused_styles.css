@@ -1,0 +1,239 @@
+@media (max-width: 768px) {
+    .footer__copyright {
+        margin-left: 0;
+    }
+}
+
+.footer__link:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .footer__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.9375rem;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.section__arrow:hover {
+    opacity: .7;
+}
+
+.section__panel::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .event-grid {
+        display: flex;
+        padding-bottom: 0.3125rem;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .event-grid::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.event__button:hover {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.50);
+}
+
+.hero-dashboard__schedule::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__schedule {
+        flex-direction: row;
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__icon {
+        width: 1.375rem;
+        height: 1.375rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__item-details {
+        margin-top: 0.3125rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__item-title {
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__info {
+        margin-top: 0.9375rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__subtitle {
+        margin: 0.3125rem 0 0 0;
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__title {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard__primary {
+        padding: 1.25rem 1.25rem 0 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-dashboard {
+        flex-direction: column;
+        gap: 1.25rem;
+        height: auto;
+        margin-bottom: 0.3125rem;
+        background-image: url(assets/output-onlinetools.png);
+    }
+}
+
+.section__tab:not(.section__tab_active):hover {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.50);
+}
+
+@media (max-width: 768px) {
+    .section__tabs {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__select {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__title {
+        gap: 1rem;
+    }
+
+    .section__main-title {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__devices {
+        grid-column-end: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 0 1.25rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns: 100%;
+    }
+}
+
+.header__link:hover {
+    opacity: 1;
+}
+
+@keyframes showMenu {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        transform: translateY(-1rem);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__links {
+        display: none;
+
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+        padding: 1.25rem;
+        background: #fff;
+        box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.50);
+    }
+
+    .header__links-toggled {
+        display: flex;
+        animation: hideMenu .3s ease-in-out 1;
+        animation-fill-mode: both;
+    }
+
+    .header__links_opened {
+        display: flex;
+        visibility: visible;
+        animation: showMenu .3s ease-in-out 1;
+        animation-fill-mode: both;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 4rem;
+        margin-bottom: 0;
+        padding: 0 0 0 1.25rem;
+        border-bottom: none;
+    }
+}

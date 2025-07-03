@@ -34,6 +34,7 @@ esbuild
       "process.env.NODE_ENV": '"production"',
     },
     sourcemap: true,
+    external: ['react', 'react-dom'],
     minify: true,
   })
   .then(() => {
@@ -41,10 +42,15 @@ esbuild
     copyFolderRecursive("assets", "dist/assets");
 
     const styles = fs.readFileSync("styles.css", "utf-8");
+    const unused_styles = fs.readFileSync("unused_styles.css", "utf-8");
     const reset = fs.readFileSync("reset.css", "utf-8");
 
     fs.writeFileSync("dist/styles.css", new CleanCSS().minify(styles).styles);
     fs.writeFileSync("dist/reset.css", new CleanCSS().minify(reset).styles);
+    fs.writeFileSync(
+      "dist/unused_styles.css",
+      new CleanCSS().minify(unused_styles).styles
+    );
 
     console.log("Build complete with static assets.");
   })

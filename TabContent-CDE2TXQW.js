@@ -1,1 +1,0 @@
-import{b as a,c as i}from"./chunk-IVLGN5EK.js";var e=a(i());function r({items:n,onSize:t}){return e.default.createElement("ul",{className:"section__panel-list"},n.map((o,l)=>e.default.createElement(Event,{key:l,...o,onSize:t})))}export{r as default};

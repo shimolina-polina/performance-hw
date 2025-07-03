@@ -7,7 +7,6 @@
     <title>Яндекс.Дом</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="unused_styles.css" media="print" onload="this.media='all'">
 </head>
 <body>
 
@@ -33,5 +32,13 @@
         © 1997–2023 ООО «Яндекс»
     </div>
 </footer>
+<script>
+  window.addEventListener('load', function() {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'unused_styles.css';
+    document.head.appendChild(link);
+  });
+</script>
 </body>
 </html>

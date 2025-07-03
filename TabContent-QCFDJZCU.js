@@ -1,0 +1,1 @@
+import{b as l,c as m,d as e}from"./chunk-42OIT5AD.js";var t=l(m());function a({items:n,onSize:o}){return t.default.createElement("ul",{className:"section__panel-list"},n.map((r,i)=>t.default.createElement(e,{key:i,...r,onSize:o})))}export{a as default};
